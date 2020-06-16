@@ -6,6 +6,7 @@ client <- connectapi:::create_first_admin(
     url = rsc,
     user = "rstudio-admin",
     password = Sys.getenv("PASSWORD"), 
+    keyname = connectapi:::random_name(),
     provider = "pam"
 )
 
